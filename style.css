@@ -1,21 +1,21 @@
 .fa-cloud-rain {
   font-size: 90px;
-  color: white;
+  color: whitesmoke;
   text-align: center;
 }
 .fa-cloud-sun-rain {
-  color: white;
+  color: whitesmoke;
   text-align: center;
   font-size: 35px;
 }
 
 .fa-cloud-sun {
-  color: white;
+  color: whitesmoke;
   text-align: center;
   font-size: 35px;
 }
 .fa-sun {
-  color: white;
+  color: whitesmoke;
   text-align: center;
   font-size: 35px;
 }
@@ -26,23 +26,29 @@
 }
 
 .days {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 100;
   font-size: 20px;
-  color: lightgray;
+  color: whitesmoke;
 }
 
 .card-title {
-  color: lightgray;
-  font-family: "Gill Sans", sans-serif;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h4 {
-  color: lightgray;
-  font-family: "Gill Sans", sans-serif;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h5 {
-  color: white;
-  font-family: "Gill Sans", sans-serif;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul {
+  list-style-type: none;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
 }
