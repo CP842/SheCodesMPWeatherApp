@@ -23,7 +23,18 @@ function showTemp(tell) {
   let rounded = Math.round(tell.data.main.temp);
   let tempElement = document.querySelector("#currentTemperature");
   tempElement.innerHTML = `${rounded}°C`;
+
+  celsiusTemp = tell.data.main.temp;
 }
+
+function showfahrenheit(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#currentTemperature");
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  tempElement.innerHTML = `${Math.round(fahrenheitTemp)}°`;
+}
+
+let celsiusTemp = null;
 
 function searchCity(event) {
   event.preventDefault();
@@ -36,3 +47,6 @@ function searchCity(event) {
 
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
 }
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", showfahrenheit);
