@@ -26,7 +26,7 @@
 }
 
 .days {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Gill Sans", sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: lightgray;
@@ -34,8 +34,15 @@
 
 .card-title {
   color: lightgray;
+  font-family: "Gill Sans", sans-serif;
 }
 
 h4 {
   color: lightgray;
+  font-family: "Gill Sans", sans-serif;
+}
+
+h5 {
+  color: white;
+  font-family: "Gill Sans", sans-serif;
 }
