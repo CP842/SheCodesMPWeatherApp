@@ -21,8 +21,14 @@
               <div class="col-2 my-2 mx-2">
                 <h1 class="card-title" ><div id ="currentTemperature">18°</div>
                 </h1>
-                <strong><span class = "system" id = "celsius">C</span> | <span class ="system"><a href = "#" id = "fahrenheit">F</a></span></strong>
-                <br />
+                <strong><span class = "system">
+                  <a href = "#" id = "celsius-temp"> Celsius | </a></span>
+                  <span class ="system">
+                    <a href = "#" id = "fahrenheit"> Fahrenheit</a></span>
+                  </strong>
+                <div class = "row">
+                  <br>
+                </div> 
                 <h4>London</h4>
               </div>
               <div class="col-2 py-3 px-3">
@@ -32,27 +38,21 @@
                 <h5 class="card-subtitle mb-2 text-muted"></h5>
               </div>
             </div>
-
               <div class = "row">
-                <div class = "col-sm-2">
-<ul> 
-  <li>
-    Precipitation: 0%
-  </li>
-  </ul>
-  </div>
     <div class = "col-sm-2">
       <ul>
   <li>
-    Humidity: 73%
+    Humidity: <span id = "humidity"> 23% 
+  </span>
   </li>
 </ul>
   </div>
   <div class = "col-sm-2">
   <ul>
   <li>
-    Wind: 2 km/h
-  </li>
+    Wind:  <span id = "wind"> 3km/h
+  </span>
+</li>
 </ul>
 </div>
 </div>

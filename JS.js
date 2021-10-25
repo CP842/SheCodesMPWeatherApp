@@ -22,6 +22,12 @@ function showTemp(tell) {
   tempElement.innerHTML = `${rounded}°C`;
 
   celsiusTemp = tell.data.main.temp;
+
+  let humidElement = document.querySelector("#humidity");
+  humidElement.innerHTML = `${tell.data.main.humidity}%`;
+
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = `${tell.data.wind.speed}km/h`;
 }
 
 function searchCity(event) {
@@ -57,3 +63,5 @@ celsiusLink.addEventListener("click", showCelsius);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
+
+axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
