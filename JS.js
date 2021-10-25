@@ -16,9 +16,6 @@ let h5 = document.querySelector("h5");
 
 h5.innerHTML = `Current time: ${day} - ${hour}:${minute}`;
 
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", searchCity);
-
 function showTemp(tell) {
   let rounded = Math.round(tell.data.main.temp);
   let tempElement = document.querySelector("#currentTemperature");
@@ -26,15 +23,6 @@ function showTemp(tell) {
 
   celsiusTemp = tell.data.main.temp;
 }
-
-function showfahrenheit(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#currentTemperature");
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  tempElement.innerHTML = `${Math.round(fahrenheitTemp)}°`;
-}
-
-let celsiusTemp = null;
 
 function searchCity(event) {
   event.preventDefault();
@@ -48,5 +36,24 @@ function searchCity(event) {
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
 }
 
+function showFahrenheit(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#currentTemperature");
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  tempElement.innerHTML = `${Math.round(fahrenheitTemp)}°`;
+}
+function showCelsius(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#currentTemperature");
+  tempElement.innerHTML = `${Math.round(celsiusTemp)}°`;
+}
+let celsiusTemp = null;
+
 let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", showfahrenheit);
+fahrenheitLink.addEventListener("click", showFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-temp");
+celsiusLink.addEventListener("click", showCelsius);
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", searchCity);
