@@ -12,9 +12,9 @@ let days = [
   "Saturday",
 ];
 let day = days[now.getDay()];
-let h5 = document.querySelector("h5");
+let h6 = document.querySelector("h6");
 
-h5.innerHTML = `Current time: ${day} - ${hour}:${minute}`;
+h6.innerHTML = `Current time: ${day} - ${hour}:${minute}`;
 
 function showTemp(tell) {
   let rounded = Math.round(tell.data.main.temp);
@@ -27,7 +27,7 @@ function showTemp(tell) {
   humidElement.innerHTML = `${tell.data.main.humidity}%`;
 
   let windElement = document.querySelector("#wind");
-  windElement.innerHTML = `${tell.data.wind.speed}km/h`;
+  windElement.innerHTML = `${Math.round(tell.data.wind.speed)}km/h`;
 }
 
 function searchCity(event) {
