@@ -26,7 +26,7 @@
 }
 
 .days {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 100;
   font-size: 20px;
   color: whitesmoke;
@@ -34,21 +34,26 @@
 
 .card-title {
   color: whitesmoke;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 h4 {
   color: whitesmoke;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-h5 {
+h6 {
   color: whitesmoke;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 ul {
   list-style-type: none;
   color: whitesmoke;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+system {
+  color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
