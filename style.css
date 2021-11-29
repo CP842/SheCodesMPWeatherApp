@@ -26,7 +26,7 @@
 }
 
 .days {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: monospace;
   font-weight: 100;
   font-size: 20px;
   color: whitesmoke;
@@ -34,26 +34,33 @@
 
 .card-title {
   color: whitesmoke;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: monospace;
 }
 
-.description {
+.weatherDescription {
   color: whitesmoke;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: monospace;
+  text-transform: capitalize;
 }
 
 h4 {
   color: whitesmoke;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: monospace;
+  text-transform: capitalize;
+}
+
+h6 {
+  color: whitesmoke;
+  font-family: monospace;
 }
 
 ul {
   list-style-type: none;
   color: whitesmoke;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: monospace;
 }
 
 .system {
   color: whitesmoke;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: monospace;
 }
