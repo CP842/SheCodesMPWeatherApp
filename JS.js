@@ -28,6 +28,9 @@ function showTemp(tell) {
 
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = `${Math.round(tell.data.wind.speed)}km/h`;
+
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = tell.data.weather[0].description;
 }
 
 function searchCity(event) {

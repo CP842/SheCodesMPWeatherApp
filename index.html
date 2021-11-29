@@ -9,47 +9,46 @@
  <link rel ="stylesheet" href = "style.css"/>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  
 </head>
+
   <body>
     <div class="container m-5">
       <div class="card body" style="width:auto">
         <img class="card-img" src="https://info.sailingvirgins.com/hs-fs/hubfs/Images/Blog%20Specific/5%20Things%20on%20Night%20Watch/Glasslike%20water.jpg?width=2048&name=Glasslike%20water.jpg" alt="Card image">
   <div class="card-img-overlay">
-        <div class= "container p-3">
+        <div class= "container mx-2 my-2 py-3 px-3">
           <div class = "row">
-              <div class="col-2 my-2 mx-2">
-                <h1 class="card-title"><div id ="currentTemperature">18°</div>
+              <div class="col ">
+                <h1 class="card-title">
+                  <div id ="currentTemperature">18°
+                  </div>
                 </h1>
                 <strong><span class = "system">
                   <a href = "#" id = "celsius-temp"> Celsius | </a></span>
                   <span class ="system">
                     <a href = "#" id = "fahrenheit"> Fahrenheit</a></span>
                   </strong>
+                  </div>
+                  </div>
+                  
                 <div class = "row">
+                <div class = "col-2">
                   <br>
-                </div> 
-                <h4>London</h4>
+                  <h4>London</h4>
+                  </div>
+                <div class="col-6">
+              <i class="fas fa-cloud-rain"></i>
+              </div>
               </div>
               <div class ="row"> 
-              <div class = "col-sm-2">
-              <ul>
-              <li>
-              <span id = "description"> Clear Skies 
-              </span>
-            </li>
-          </ul>
-        </div>
+              <div class = "col">
+              <span class = "description"> Clear Skies </span>        
               </div>
-              <div class="col-2 py-3 px-3">
-                <i class="fas fa-cloud-rain"></i>
               </div>
-              <div class="col mx-2 my-2 py-3 px-3">
-                <h6 class="card-subtitle mb-2 text-muted"></h6>
-              </div>
-            </div>
-              <div class = "row">
+
+<div class = "row">
     <div class = "col-sm-2">
+      <br>
       <ul>
   <li>
     Humidity: <span id = "humidity"> 23% 
@@ -58,6 +57,7 @@
 </ul>
   </div>
   <div class = "col-sm-2">
+     <br>
   <ul>
   <li>
     Wind:  <span id = "wind"> 3km/h
@@ -66,11 +66,15 @@
 </ul>
 </div>
 </div>
-</div>
-        <div class="container py-3 px-3">
-          <div class ="row col">
-                <div class = "row"><span class= "days"><strong>5 Day Weather Forecast</strong></span></div>
-                <figure class="text-center">  
+</div>        
+<div class="container mx-2 my-2 py-3 px-3">
+                <div class = "row">
+                  <span class= "days">
+                    <strong>
+                      5 Day Weather Forecast
+                    </strong>
+                  </span>
+                </div>
         <div class="row">
           <div class="col-2">
             <div class="p-1"><span class= "days">Monday </span></div>
@@ -139,6 +143,8 @@
         />
       </form>
         </div>
+</div>
+</div>
 </div>
 </div>
 </div>

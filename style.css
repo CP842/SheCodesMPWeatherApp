@@ -37,12 +37,12 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-h4 {
+.description {
   color: whitesmoke;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-h6 {
+h4 {
   color: whitesmoke;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -53,7 +53,7 @@ ul {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-system {
+.system {
   color: whitesmoke;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
