@@ -66,5 +66,3 @@ celsiusLink.addEventListener("click", showCelsius);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
-
-axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
